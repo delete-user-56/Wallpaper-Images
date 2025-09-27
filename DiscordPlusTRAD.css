@@ -1,0 +1,95 @@
+/**
+ * @name Discord+
+ * @author PlusInsta
+ * @authorId 309931975102300160
+ * @authorLink https://plusinsta.xyz
+ * @version 3.4.0
+ * @description Un thème Discord élégant et personnalisable.
+ * @donate https://ko-fi.com/plusinsta
+ * @website https://plusinsta.github.io/discord-plus
+ * @source https://github.com/PlusInsta/discord-plus/tree/master/src
+ * @updateUrl https://plusinsta.github.io/discord-plus/DiscordPlus.theme.css
+ * @invite 2Jwh2nS
+*/
+@import url('https://plusinsta.github.io/discord-plus/src/DiscordPlus-source.theme.css');
+
+/* example image url: https://i.imgur.com/DWlzdwZ.jpeg | https://i.imgur.com/LapKK1R.jpeg | https://i.imgur.com/bHyCi9Q.png*/
+
+.theme-dark {
+  --dplus-backdrop: url('https://github.com/delete-user-56/Wallpaper-Images/blob/main/cosmic-nebula-space-background.jpg?raw=true');
+  /* Image ou couleur pour l'arrière-plan. Par défaut utilise la couleur d'accentuation en cas d'erreur. */
+  
+  --dplus-accent-color-hue: 290;
+  --dplus-accent-color-saturation: 70%;
+  --dplus-accent-color-lightness: 31%;
+  /* Les couleurs d'accentuation mettent en valeur les éléments du premier plan. */
+  /* https://hslpicker.com */
+
+  --dplus-foreground-color-hue-base: 210;
+  --dplus-foreground-color-hue-links: 197;
+  --dplus-foreground-color-saturation-amount: 1;
+  --dplus-foreground-color-lightness-amount: 1;
+  /* Ces paramètres déterminent la couleur des éléments du premier plan. */
+  /*
+  * NOTE: "Amount" est un décalage, où 1.0 est normal, et 0.5 est réduit de 50%.
+  * Par exemple: Si un élément a une luminosité de base de 0.45,
+  * définir --dplus-foreground-color-lightness-amount à 0.8
+  * donnera à l'élément une luminosité finale de 0.25.
+  * Bien que vos décalages puissent être n'importe quel nombre, les valeurs finales seront toujours entre 0 et 1. */
+  
+  --dplus-background-color-hue: 320;
+  --dplus-background-color-saturation-amount: 1;
+  --dplus-background-color-lightness-amount: 0.3;
+  --dplus-background-color-alpha: 0.8;
+  /* Ceci détermine la couleur et l'opacité des surfaces. */
+  /* Si le premier plan est difficile à lire, essayez d'ajuster ces valeurs. */
+}
+
+/* Si vous utilisez le thème clair, vous pouvez le modifier séparément du thème sombre. */
+/* Les instructions ci-dessus fonctionnent aussi pour le thème clair. */
+/* .theme-light {
+  --dplus-backdrop: url('https://i.imgur.com/3AiL3yN.png');
+
+  --dplus-accent-color-hue: 320;
+  --dplus-accent-color-saturation: 60%;
+  --dplus-accent-color-lightness: 31%;
+
+  --dplus-foreground-color-hue-base: 210;
+  --dplus-foreground-color-hue-links: 197;
+  --dplus-foreground-color-saturation-amount: 1;
+  --dplus-foreground-color-lightness-amount: 1;
+
+  --dplus-background-color-hue: 320;
+  --dplus-background-color-saturation-amount: 1;
+  --dplus-background-color-lightness-amount: 1;
+  --dplus-background-color-alpha: 0.8;
+} */
+
+:root {
+  --dplus-font-ui: 'Poppins';
+  --dplus-font-body: 'Roboto';
+  --dplus-font-header: 'Righteous';
+  /* Vous pouvez utiliser n'importe quelle police installée, mais vous devez entrer son nom web. */
+  /* Si vous venez d'installer une police, vous devrez peut-être redémarrer l'application ou l'appareil. */
+
+  --dplus-radius-ui: 7px; /* default: 10px */
+  /* Arrondissement des coins carrés des éléments de l'application. Doit être une taille absolue, par ex. pixels. */
+  --dplus-radius-avatar: 30%;
+  /* Arrondissement des icônes de profil utilisateur. Doit être une taille relative, par ex. pourcentage. */
+  --dplus-radius-server: 20%;
+  /* Arrondissement des icônes de serveur. Doit être une taille relative, par ex. pourcentage. */
+
+  --dplus-spacing-ui: 7px;
+  /* Cette valeur affecte les marges intérieures et extérieures dans toute l'application. */
+  /* L'augmenter rendra l'application moins compacte. */
+  --dplus-spacing-app: 5px;
+  /* Cette valeur affecte l'espacement entre les éléments principaux de l'application. */
+  /* L'augmenter rendra l'arrière-plan plus visible. */
+
+  --dplus-icon-avatar-chat: 40px;
+  /* Affecte la taille des icônes de profil utilisateur dans le chat. */
+  --dplus-icon-avatar-list: 32px;
+  /* La taille des icônes de profil utilisateur dans les listes. */
+  --dplus-icon-avatar-profile: 80px;
+  /* La taille des icônes de profil utilisateur dans le profil complet. */
+}
